@@ -899,62 +899,18 @@ body {
         transform: translateX(-50%) scale(1);
         box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
     }
+
     50% {
         transform: translateX(-50%) scale(1.05);
         box-shadow: 0 6px 16px rgba(16, 185, 129, 0.4);
     }
+
     100% {
         transform: translateX(-50%) scale(1);
         box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
     }
 }
 
-.offer__shipping {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: var(--spacing-xs);
-    background: linear-gradient(135deg, #ecfdf5, #d1fae5);
-    border: 2px solid #10b981;
-    border-radius: var(--radius-lg);
-    padding: var(--spacing-sm);
-    margin: var(--spacing-sm) 0;
-    animation: glow-green 3s ease-in-out infinite;
-}
-
-@keyframes glow-green {
-    0%, 100% {
-        box-shadow: 0 0 5px rgba(16, 185, 129, 0.3);
-    }
-    50% {
-        box-shadow: 0 0 15px rgba(16, 185, 129, 0.5);
-    }
-}
-
-.shipping__icon {
-    font-size: 1.2rem;
-    animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-        transform: translateY(0);
-    }
-    40% {
-        transform: translateY(-3px);
-    }
-    60% {
-        transform: translateY(-2px);
-    }
-}
-
-.shipping__text {
-    color: #065f46;
-    font-weight: 700;
-    font-size: 0.875rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-}
 
 
 .offer__card:hover {
@@ -1568,38 +1524,29 @@ body {
     .offers__main-image {
         max-width: 95%;
     }
-    
+
     .features__content {
         grid-template-columns: 1fr;
         gap: var(--spacing-lg);
     }
-    
+
     .feature__highlight {
         padding: var(--spacing-lg);
     }
-    
+
     .feature__icon--large {
         width: 60px;
         height: 60px;
     }
-    
+
     .feature__title--large {
         font-size: 1.25rem;
     }
-    
+
     .feature__description--large {
         font-size: 0.875rem;
     }
-    
-    .offer__shipping {
-        padding: var(--spacing-xs);
-        margin: var(--spacing-xs) 0;
-    }
-    
-    .shipping__text {
-        font-size: 0.75rem;
-    }
-    
+
     .offer__badge--shipping {
         font-size: 10px;
         padding: var(--spacing-xs) var(--spacing-sm);
